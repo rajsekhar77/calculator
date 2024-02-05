@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: url(https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    font-family: "Aspira Wide W01 Heavy";
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.calculator {
+    display: flex;
+    height: 480px;
+    width: 330px;
+    background-color: white;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.422) 0px 0px 10px;
+}
+
+h1{
+    text-align: center;
+    padding: 35px;
+    font-size: 40px;
+    color: white;
+}
+
+.result {
+    /* box-shadow: rgba(0, 0, 0, 0.721) 0px 2px 6px; */
+    box-shadow: inset 0px -2px 4px 0px rgba(45, 134, 202, 0.75);
+    outline: none;
+    border: none;
+    text-align: right;
+    font-size:xx-large;
+    font-weight: 700;
+    font-family: "Aspira Wide W01 Heavy";
+    color: white;
+    padding-right: 10px;
+    height: 12.5%;
+    width: 80%;
+    background-color: #3981FC;
+    border-radius: 3rem;
+    margin-top: 10px;
+}
+
+.row #rmv {
+    background-color: #1F2B54;
+    color: white;
+    box-shadow: 0px 0px 4px #445eb6;
+}
+
+.buttons {
+    height: 75%;
+    width: 85%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.row div{
+    transition: all 0.2s ease-in-out;
+}
+.row div:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.row div:active{
+    transform: scale(0.9);
+    box-shadow: black 0px 0px 4px;
+}
+
+.row {
+    height: 60px;
+    width: 100%;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row div {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+    /* box-shadow: inset 0px -1px 4px 0px rgba(149, 149, 149, 0.75); */
+    color: #757C96;
+}
+
+.row .spl-operator {
+    background-color: #F5F7FF;
+    box-shadow: 0px 3px 4px #8585855d;
+}
+
+.row .numbers {
+    background-color: #D8DDF0;
+    box-shadow: inset 0px -2px 5px 0px #adb1c4;
+}
+
+.row #plus {
+    color: white;
+    background-color: #63DE77;
+    box-shadow: 0px 0px 5px #44ad5582;
+}
+
+.row #mul {
+    color: white;
+    background-color: #FFC804;
+    box-shadow: 0px 0px 5px #ffda52;
+}
+
+.row #division {
+    background-color: #2388FF;
+    color: white;
+    box-shadow: 0px 0px 5px #65adff;
+}
+
+.row #sub {
+    color: white;
+    background-color: #FF445A;
+    box-shadow: 0px 0px 5px #ff96a2;
+}
+
+.row #equal {
+    background-color: #F5F7FF;
+    box-shadow: 0px 3px 4px #8585855d;
+}
+
+.row #point {
+    background-color: #D8DDF0;
+    box-shadow: inset 0px -2px 5px 0px #adb1c4;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
